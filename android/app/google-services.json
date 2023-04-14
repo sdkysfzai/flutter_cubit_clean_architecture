@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "999354534828",
+    "project_id": "miload-b07a5",
+    "storage_bucket": "miload-b07a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999354534828:android:50f46bf3d2323aa7b5c809",
+        "android_client_info": {
+          "package_name": "com.flutter.flutter_miload"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999354534828-9etnat42r27pbeke0fpqei9co3qaphk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcSeXrcan36eXw-lREzonA8Du8rIiYnfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999354534828-9etnat42r27pbeke0fpqei9co3qaphk3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
