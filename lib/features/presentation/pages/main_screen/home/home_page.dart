@@ -19,7 +19,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return  SafeArea(
+    return SafeArea(
       child: Scaffold(
         backgroundColor: bgColor,
         body: HomePageBody(user: widget.user),
@@ -73,9 +73,7 @@ class _HomePageBodyState extends State<HomePageBody> {
                 ),
                 const Expanded(child: SizedBox()),
                 IconButton(
-                    onPressed: () {
-                     
-                    },
+                    onPressed: () {},
                     icon: const Icon(
                       Icons.notifications,
                       size: 30,
@@ -187,10 +185,9 @@ class _HomePageBodyState extends State<HomePageBody> {
                 ),
               ),
             ),
-            
+
             sizeVer(defaultPadding),
             Row(
-            
               children: [
                 Expanded(
                   flex: 1,
@@ -204,7 +201,7 @@ class _HomePageBodyState extends State<HomePageBody> {
                     child: Row(
                       children: [
                         sizedHor(defaultPadding),
-                       const Icon(
+                        const Icon(
                           Icons.alarm_rounded,
                           color: blackColor,
                           size: 50,
@@ -233,19 +230,23 @@ class _HomePageBodyState extends State<HomePageBody> {
                             border: Border.all(width: 1, color: greyColor),
                             borderRadius:
                                 BorderRadius.circular(defaultCircularRadius)),
-                        child: Row(children: [
-                          sizedHor(defaultPadding),
-                           Text(
+                        child: Row(
+                          children: [
+                            sizedHor(defaultPadding),
+                            Text(
                               ' Saved\n Trips',
                               style: GoogleFonts.inter(
                                   fontSize: defaultFontSize,
                                   fontWeight: FontWeight.w600,
                                   color: blackColor),
                             ),
-                           const Expanded(child: SizedBox()),
-                            const Icon(Icons.arrow_forward,),
+                            const Expanded(child: SizedBox()),
+                            const Icon(
+                              Icons.arrow_forward,
+                            ),
                             sizedHor(defaultPadding),
-                        ],),
+                          ],
+                        ),
                       ),
                       sizeVer(defaultPaddingMin),
                       Container(
@@ -255,26 +256,30 @@ class _HomePageBodyState extends State<HomePageBody> {
                             border: Border.all(width: 1, color: greyColor),
                             borderRadius:
                                 BorderRadius.circular(defaultCircularRadius)),
-                        child: Row(children: [
-                          sizedHor(defaultPadding),
-                           Text(
+                        child: Row(
+                          children: [
+                            sizedHor(defaultPadding),
+                            Text(
                               ' Available\n Vehicles',
                               style: GoogleFonts.inter(
                                   fontSize: defaultFontSize,
                                   fontWeight: FontWeight.w600,
                                   color: blackColor),
                             ),
-                           const Expanded(child: SizedBox()),
-                            const Icon(Icons.arrow_forward,),
+                            const Expanded(child: SizedBox()),
+                            const Icon(
+                              Icons.arrow_forward,
+                            ),
                             sizedHor(defaultPadding),
-                        ],),
+                          ],
+                        ),
                       ),
                     ],
                   ),
                 ),
               ],
             ),
-           
+
             sizeVer(defaultPadding),
             // Align(
             //   alignment: Alignment.centerLeft,
