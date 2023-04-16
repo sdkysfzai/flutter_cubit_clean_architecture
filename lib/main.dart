@@ -42,7 +42,9 @@ class MyApp extends StatelessWidget {
           "/": (context) => BlocBuilder<AuthCubit, AuthState>(
                 builder: (context, authState) {
                   if (authState is Authenticated) {
-                    return  MainScreen(uid: authState.uid,);
+                    return MainScreen(
+                      uid: authState.uid,
+                    );
                   } else {
                     return const SignInPage();
                   }
